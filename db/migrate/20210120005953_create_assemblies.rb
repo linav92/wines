@@ -3,7 +3,7 @@ class CreateAssemblies < ActiveRecord::Migration[6.0]
     create_table :assemblies do |t|
       t.references :strain, null: false, foreign_key: true
       t.references :wine, null: false, foreign_key: true
-      t.interger :percentage
+      t.integer :percentage
 
       t.timestamps
     end
